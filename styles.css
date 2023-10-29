@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h3 {
+    color: #4c4e61;
+}
+
+
+p {
+    color: #a3a5ae;
+    font-size: 15px;
+}
+
+
+.background-container {
+    background-color: #fafafa;
+}
+
+
+.main-container {
+    padding: 5rem 2rem;
+}
+
+
+.heading {
+    font-size: 1.5rem;  
+    text-align: center; 
+}
+
+
+span {
+    font-weight: 50;    
+}
+
+
+.heading-text {
+    text-align: center;
+    margin: 1.2rem 0 5rem;
+}
+
+
+.feature {
+    background-color: #fff;
+    border-top: 4px solid;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 15px 2px #a3a5ae46;   
+}
+
+
+.feature:first-child {
+    border-top-color: #45d3d3;    
+}
+
+
+.feature:nth-child(2) {
+    border-top-color: #ea5353;
+}
+
+
+.feature:nth-child(3) {
+    border-top-color: #fcaf4a;
+}
+
+
+.feature:nth-child(4) {
+    border-top-color: #549ef2;
+}
+
+
+.feature-inner {
+    padding: 1.5rem;
+}
+
+
+.feature-heading {
+    font-size: 20px;
+}
+
+
+.feature-text {
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+
+.feature-icon {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+@media (width >= 576px) {
+
+   
+    .heading-text {
+        max-width: 519px;
+        margin: 1.2rem auto 5rem;
+    }
+
+    .features-container {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 2rem;
+    }
+
+
+    .feature {
+        margin: 0;
+    }
+}
+
+
+
+@media (width >= 1000px) {
+
+    .heading {
+        font-size: 2.2rem;
+    }
+
+
+    .heading-text {
+        font-size: 1rem;
+        max-width: 550px;
+    }
+
+
+    .features-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }    
+
+
+    .feature:first-child {
+        translate: -190px 130px;
+    }
+
+
+    .feature:nth-child(2) {
+        translate: -185px;
+    }
+    
+    
+    .feature:nth-child(3) {
+        translate: 181px;
+    }
+    
+    
+    .feature:nth-child(4) {
+        translate: 185px -130px;
+    }
+
+}
+
+
+/* red - #ea5353
+    cyan - #45d3d3
+    orange - #fcaf4a
+    blue - #549ef2
+    very dark blue - #4c4e61
+    grayish blue - #a3a5ae
+    very light gray - #fafafa */
