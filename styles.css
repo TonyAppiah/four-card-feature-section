@@ -120,6 +120,8 @@ span {
 
 
 
+/* Using the 'translate' property to position the cards to achieve the 1440px size design layout
+
 @media (width >= 1000px) {
 
     .heading {
@@ -158,13 +160,40 @@ span {
         translate: 185px -130px;
     }
 
+} */
+
+
+
+/* 1440px size layout alternative(beta) solution using Grid */
+
+@media (width >= 1000px) {
+    .heading {
+        font-size: 2.2rem;
+    }
+
+
+    .heading-text {
+        font-size: 1rem;
+        max-width: 550px;
+    }
+
+
+    .features-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 9rem;
+    }
+
+
+    .feature:first-child {
+        grid-row: 1 / 3;
+        margin: auto 0;
+    }
+
+
+    .feature:nth-child(4) {
+        grid-column: 3 /4;
+        grid-row: 1 / 3;
+        margin: auto 0;
+    }
 }
 
-
-/* red - #ea5353
-    cyan - #45d3d3
-    orange - #fcaf4a
-    blue - #549ef2
-    very dark blue - #4c4e61
-    grayish blue - #a3a5ae
-    very light gray - #fafafa */
